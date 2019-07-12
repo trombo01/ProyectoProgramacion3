@@ -32,12 +32,12 @@ $baseurl=base_url();
     $usuario=$this->session->userdata('Nombre');
     if(!empty($usuario)):?>
     
-    <input type="number" name="stock" class="form-control col-md-2" value="<?=$articulo->EXISTENCIA?>" id="">  
+    <input type="number" name="stock" class="form-control col-md-3" value="<?=$articulo->EXISTENCIA?>" id="">  
      <input type="hidden" name="id_articulo" value="<?=$articulo->id_articulo?>">
       <button type="submit" class='btn btn-primary'>+</button>
       </form>
 <?php else:?>
-<input type="number" readonly name="" class="form-control col-md-2" value="<?=$articulo->EXISTENCIA?>" id="">
+<input type="number" readonly name="" class="form-control col-md-3" value="<?=$articulo->EXISTENCIA?>" id="">
 <?php endif;?>
     </div>
     <p><b>Precio:</b> RD$<?=$articulo->PRECIO?></p>
